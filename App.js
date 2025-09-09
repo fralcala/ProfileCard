@@ -1,10 +1,15 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.card}>
-        {/* <Image /> */}
+        <Image
+          source={{
+            uri: "https://media.discordapp.net/attachments/1027411724103593994/1414989958346702949/20250210_174012.jpg?ex=68c19397&is=68c04217&hm=b77f98cd807c7cd25ea185ba258afdbb8a69628e09484740a36cb7f504450133&=&format=webp&width=1170&height=1560",
+          }}
+          style={styles.profile}
+        />
         <Text style={styles.name}>Francis Alcala</Text>
         <Text style={styles.bio}>
           I am a senior at IUI majoring in Media Arts & Science.
@@ -43,9 +48,16 @@ const styles = StyleSheet.create({
     borderWidth: 2,
   },
 
+  profile: {
+    width: 200,
+    height: 200,
+    borderRadius: 200,
+    marginBottom: 15,
+  },
+
   name: {
     textAlign: "center",
-    fontSize: 20,
+    fontSize: 25,
   },
 
   bio: {
