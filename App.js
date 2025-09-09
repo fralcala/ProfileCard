@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     // height: 300,
     padding: 20,
     margin: 20,
-    borderRadius: 12,
+    borderRadius: 22,
     alignItems: "center",
     justifyContent: "center",
     shadowColor: "#000",
@@ -53,6 +53,8 @@ const styles = StyleSheet.create({
     height: 200,
     borderRadius: 200,
     marginBottom: 15,
+    borderColor: "#d0351dff",
+    borderWidth: 2,
   },
 
   name: {
